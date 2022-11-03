@@ -1,0 +1,13 @@
+1. echo $SHELL
+2. cd /tmp ,  mkdir missing
+3. man touch
+4. touch semester
+5. vim semester - write -> #!/bin/sh
+			   curl --head --silent https://missing.csail.mit.edu
+6. Executin ./semester file is not working because you don't have permision to execute on that file.
+	.rw-r--r-- 61 klecansky  3 Nov 22:49  semester
+7. sh ./semester
+8. man chmod
+9. chmod 744 semester
+   .rwxr--r-- 61 klecansky  3 Nov 22:49  semester
+10. ./semester | grep --ignore-case last-modified > last-modified.txt or ./semester | grep --ignore-case last-modified | tee > last-modified.txt
